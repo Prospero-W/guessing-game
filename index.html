@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <p>A Game You just might Enjoy!</p>
+  <div class="wrapper">
+  <h2>Guessing Game!</h2>
+  <div class="stats-container">
+    <div class="attempt">
+      ATTEMPTS
+      <div class="bar attempts-bar"></div>
+    </div>
+    <div class="score">
+      SCORE
+      <div class="bar score-bar"></div>
+    </div>
+    <div class="wins">
+      WINS
+      <div class="bar wins-bar"></div>
+    </div>
+  </div>
+  <div class="container">
+    <input type="text" class="min-guess"placeholder="Enter minimum guess range" />
+    <button onclick="minGuess()">Done</button>
+    <input type="text" class="max-guess"placeholder="Enter maximum guess range" />
+    <button onclick="maxGuess()">Done</button>
+    <input type="text" class="guess" placeholder="Enter a guess in the range" />
+    <button onclick="runGuess()">Run</button>
+    <button class="clear" onclick="resetAll()">Clear ALL</button>
+  </div>
+</div>
+<footer>
+  &copy; Guessing Game Created by Greatness Team
+</footer>
+</body>
+</html>
